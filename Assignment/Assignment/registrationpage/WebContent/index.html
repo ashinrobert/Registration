@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+<link rel='stylesheet' type='text/css' href="css/style.css">
+</head>
+<body>
+	<form method="post" action="welcome">
+		<p>Contact information</p>
+		<label>First name</label>
+		<input type="text" name="fname" required />
+		<span class="validity"></span>
+		
+		<label>Last name</label> 
+		<input type="text" name="lname" required />
+		<span class="validity"></span>
+	
+		<label>Email </label>
+		<input type="email" name="email" required /> 
+		<span class="validity"></span>
+		
+		<label>Mobile</label>
+		<input type="tel" placeholder="10 digit number" pattern="[0-9]{10}" name="mobile" required /> 
+		<span class="validity"></span>
+		
+		<input type="submit" value="Register">
+			
+	</form>
+</body>
+</html>
